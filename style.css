@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 70%;
+  margin: 20px auto;
+  display: flex;
+}
+
+#fileLoader {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.photo {
+  width: 220px;
+  height: 220px;
+  display: block;
+  alt: none;
+  object-fit: cover;
+}
+
+.fileInput {
+  display: block;
+  margin-top: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#infoBlock {
+  max-width: 30%;
+  margin-top: 20px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.point {
+  margin: 10px 0;
+}
+
+.point-name {
+  font-size: 20px;
+}
+
+.info {
+  font-size: 20px;
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+.info.email {
+  text-transform: none;
+}
+
+.edit-save {
+  padding: 3px 7px;
+  font-size: 14px;
+}
+
+.point-input {
+  font-size: 15px;
+  padding: 2px 6px;
+  outline: none;
+}
+
+.li {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  border-top: 1px dashed rgba(128, 128, 128, 0.63);
+  padding: 10px;
+  width: 100%;
+}
+
+.li::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  left: -15px;
+  top: 50px;
+}
+
+.li > * {
+  margin: 3px 5px;
+  padding: 3px;
+}
+
+.li > p {
+  font-size: 1em;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.li > button {
+  width: fit-content;
+  padding: 3px 30px;
+}
+
+ul {
+  width: 100%;
+}

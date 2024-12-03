@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="container">
+        <section id="fileLoader">
+          <img src="" class="photo" id="userImage" />
+          <input type="file" id="fileInput" class="fileInput" />
+        </section>
+
+        <section id="infoBlock">
+          <ul class="info">
+            <li class="point">
+              <div class="user-info">
+                <h2 class="point-name">ФИО</h2>
+                <h3 class="info name"></h3>
+              </div>
+              <input type="text" class="point-input" id="inputName" />
+              <button class="edit-save name">save</button>
+            </li>
+
+            <li class="point">
+              <div class="user-info">
+                <h2 class="point-name">Возраст</h2>
+                <span class="info"></span>
+              </div>
+              <input type="text" class="point-input" id="inputAge" />
+              <button class="edit-save">save</button>
+            </li>
+
+            <li class="point">
+              <div class="user-info">
+                <h2 class="point-name">Email</h2>
+                <span class="info email"></span>
+              </div>
+              <input type="text" class="point-input" id="inputEmail" />
+              <button class="edit-save">save</button>
+            </li>
+
+            <li class="point">
+              <div class="user-info">
+                <h2 class="point-name">Телефон</h2>
+                <span class="info"></span>
+              </div>
+              <input type="text" class="point-input" id="inputPhone" />
+              <button class="edit-save">save</button>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <ul id="descriptionBlock"></ul>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./TaskComponent.js"></script>
+  </body>
+</html>
