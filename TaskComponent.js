@@ -2,6 +2,7 @@ const description = document.getElementById('descriptionBlock');
 
 function createLi(count = 1) {
   const ul = document.createElement('ul');
+
   const li = document.createElement('li');
   li.setAttribute('class', `li t${count}`);
   li.style.marginLeft = `${count * 5}px`;
@@ -12,7 +13,7 @@ function createLi(count = 1) {
 
   const button = document.createElement('button');
   button.textContent = 'Save';
-  input.setAttribute('class', 'button');
+  button.setAttribute('class', 'button');
 
   const descriptionInput = document.createElement('textarea');
   descriptionInput.placeholder = 'description';
@@ -51,8 +52,8 @@ function createLi(count = 1) {
   return ul;
 }
 
-function render(target, elements) {
-  elements.forEach((e) => target.append(e));
+function render(target, element) {
+  target.append(element);
 }
 
-render(description, [createLi(1)]);
+render(description, createLi(1));

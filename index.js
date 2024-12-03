@@ -38,8 +38,6 @@ document.querySelectorAll('.edit-save').forEach((t) => {
   });
 });
 
-//Validation
-
 const getButton = (target) => {
   return target.parentNode.children[2];
 };
